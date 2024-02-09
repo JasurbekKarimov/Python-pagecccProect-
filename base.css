@@ -1,0 +1,31 @@
+/* Background image */
+.background {
+    background-image: url('https://www.goodfreephotos.com/albums/other-landscapes/sunrise-over-the-lake-with-tree-and-birds.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.content {
+    padding: 10px;
+}
+
+
+.news-image {
+    max-width: 5%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+.background img {
+    background-image: url('https://unsplash.com/photos/withered-dandelion-in-clear-glass-vial--_cRkZvAtI8');
+    max-width: 100px; /* Rasmingizning eng kattasi (max width) */
+    width: 50%; /* Rasmingizning to'liq o'lchami */
+    height: auto; /* Tasvirning o'rniga mos ravishda saqlanishi */
+}
+
+
+

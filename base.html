@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasur Blog</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">Jasur's Blog</a></h1>
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                    <li>Xush kelibsiz, {{ user.username }}!</li>
+                    <li><a href="{% url 'logout' %}">Chiqib ketish</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Saytga kirish</a></li>
+                    <li><a href="{% url 'signup' %}">Ro'yxatdan o'tish</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    <footer>
+        <h2><a href="{% url 'post_new' %}">Yangi post yozish</a></h2>
+    </footer>
+</body>
+</html>

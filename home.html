@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Saytimizga Xush Kelibsiz!!</h1>
+    <h1>Yangi Postlar</h1>
+
+    <!-- Background image -->
+    <div class="background" style="background-image: url('https://www.goodfreephotos.com/albums/other-landscapes/sunrise-over-the-lake-with-tree-and-birds.jpg');">
+        <!-- Content -->
+        <div class="content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <!-- News images -->
+            <img class="news-image" src="https://www.goodfreephotos.com/albums/other-landscapes/sunrise-over-the-lake-with-tree-and-birds.jpg" alt="News 1">
+            <img class="news-image" src="https://www.goodfreephotos.com/albums/other-landscapes/sunrise-over-the-lake-with-tree-and-birds.jpg" alt="News 2">
+
+            <!-- ... -->
+        </div>
+    </div>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
